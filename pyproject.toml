@@ -1,0 +1,25 @@
+[project]
+name = "port-scanner"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Mark-Amgad-Selim",email = "mark.amgad@thndr.app"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pydantic (>=2.11.5,<3.0.0)",
+    "typer (>=0.16.0,<0.17.0)",
+    "rich (>=14.0.0,<15.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "port_scanner", from = "src"}]
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
