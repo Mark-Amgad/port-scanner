@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  port-scanner:
+    build: .
+    container_name: port-scanner
+    volumes:
+      - .:/app
+    working_dir: /app
+    tty: true
